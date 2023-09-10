@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+}
+
+p {
+    margin: 0;
+    font-weight: 400;
+    color: var(--bs-dark-color);
+    font-size: 1rem;
+    letter-spacing: 0.07rem;
+    line-height: 1.55rem;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button, a {
+    font-size: 1.15rem !important;
+    letter-spacing: 0.03rem;
+    word-spacing: 0.1rem;
+}
+
+.common-heading {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 0.01rem !important;
+}
+
+.common-title {
+    margin-bottom: 4.2rem;
+}
+
+.common-section {
+    padding-bottom: 9rem;
+}
+
+
+/* Navbar */
+
+.nav-link {
+    color: yellow;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: red;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(19, 234, 19);
+}
+
+
+/* Hero Section */
+
+.hero-section .container {
+    display: grid;
+    place-content: center;
+    height: inherit;
+}
+
+.bg-main {
+    height: 80vh;
+    position: relative;
+}
+
+.hero-video-section {
+    width: 30rem;
+    border-radius: 2rem;
+}
+
+.custom-shape-divider-bottom-1692776806 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1692776806 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1692776806 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+/* Service Section */
+
+.service-section {
+    padding-block: 5rem !important;
+}
+
+.icon-span {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color:royalblue;
+    color: #ffffff;
+}
+
+.card-box {
+    box-shadow: 1px 1px 15px black;
+}
+
+.card-box:hover {
+    box-shadow: 0 0 20px green;
+}
+
+
+/* More Info */
+
+.more-info-section {
+    background-image: linear-gradient(rgba(22,22,22,0.9), rgba(22,22,22,0.9)), url();
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 6rem 0;
+    overflow: hidden;
+}
+
+.more-info-section .img-section {
+    position: relative;
+}
+
+.more-info-section .img-section img {
+    width: 70%;
+}
+
+
+/* Online Mode */
+
+.business-section {
+    padding-top: 3rem;
+}
+
+
+/* Carousel */
+
+.carousel .card {
+    background-color: #262631;
+    color: #FFFFFF;
+    transition: all 0.3s linear;
+}
+
+.carousel-indicators {
+    bottom: -20%;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: .7rem;
+    height: .7rem;
+    background-color: royalblue;
+}
+
+
+/* Contact */
+
+.contact-section {
+    position: relative;
+}
+
+.custom-shape-divider-top-1684211116 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1684211116 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1684211116 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.contact-section .common-title {
+    padding-top: 6rem;
+}
+
+.contact-section .form-section {
+    width: 50%;
+}
+
+
+/* Make Responsive */
+
+@media screen  and (max-width: 998px){
+    .hero-video-section{
+        width: 18rem;
+        border-radius: 1rem;
+    }
+
+    .hero-section button {
+        margin-bottom: 4rem;
+    }
+
+    .card-box {
+        margin-inline: 1rem;
+    }
+    
+    .navbar-toggler {
+        border-color: #FFFFFF;
+    }
+
+    .navbar-toggler-icon {
+        color: royalblue;
+        background-color: yellow;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    section .common-heading {
+        font-size: 2rem;
+    }
+
+    section .para-width {
+        width: auto;
+    }
+
+    .hero-section {
+        height: 100vh;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+
+    .more-info-section {
+        text-align: center;
+    }
+
+    .carousel .carousel-indicators {
+        bottom: -8%;
+    }
+}
